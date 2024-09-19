@@ -1,0 +1,84 @@
+
+.fil0 {
+  fill: #fffdef;
+}
+
+
+
+
+.card {
+  width: 1010px;
+  height: 254px;
+  border-radius: 4px;
+  background: #212121;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.card p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background: #1f2937;
+  border: 2px solid #ff5a91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}.card p:hover{
+  border:none;
+}
+
+
+.card p:hover {
+  flex: 4;
+}
+
+
+.card p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: .1em;
+}
+
+.card p:hover span {
+  transform: rotate(0);
+}
+
+
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.shake-hand {
+  display: inline-block;
+  animation: shake 0.5s infinite;
+}
+
+.blockHover:hover .blk{
+  display: block;
+}
+.blockHover:hover .hoverHidden{
+  display: none;
+}
+
+
+.blockHover:hover .blkk{
+  display: block;
+}
+.blockHover:hover .hoverHiddenn{
+  display: none;
+}
